@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejores franquicias Disney</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href=<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Patua+One&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 32px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-family: var(--cardo);
+            text-transform: uppercase;
+            color: var(--azul);
+            box-shadow: var(--rosa) 0px 0px 8px;
+            padding: 1.2%;
+            background-color: var(--rosa);
+        }
+        a:hover {
+        background-color: #c26c4d;
+        }
+        :root{
+            --azul: #003049;
+            --naranja: #f77f00;
+            --gris: #e5e5e5;
+            --rojo: #d62828;
+            --amarillo: #fcbf49;
+            --amarillo_claro:#eae2b7; 
+            --patuaone: 'Patua One', sans-serif;
+            --cardo: 'Cardo', serif;
+            --negrita: 700;
+            --rosa: #e29578;
+        }
+        .container{
+            padding: 0 2em;
+        }
+        body>header{
+            display: flex;
+            padding: 50px 0;
+            text-align: center;
+            height: 100vh;
+            background-image:url(https://th.bing.com/th/id/R.63bd1d96ceeee528cbf2a7f4f5c9db19?rik=p4L7IO5Ch5DTeQ&pid=ImgRaw&r=0)
+        }
+        header .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+        }
+        hgroup{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            background-color: #e29478c5;
+            padding: 0.5%;
+        }
+        h1{
+            font-size: 4em;
+            margin:0 0 0em 0;
+            font-family: var(--cardo);
+            font-weight: var(--negrita);
+            color:var(--gris);
+        }
+        h2{
+            font-size: 0.8em;
+            margin: 0 0 3em 0;;
+            font-family: var(--patuaone);
+            color: white;
+            width: 50%;
+        }
+        h3{
+            font-family: var(--cardo);
+            display:flex;
+            justify-content: center;
+            padding: 0.2em;
+            margin: 0em 0 0 0;
+            font-size: 0.8em;
+        }
+        h4{
+            font-family: var(--cardo);
+            display:flex;
+            justify-content: center;
+            font-size: 0.6em;
+            background-color: #f780003d;
+            color: white;
+        }
+        h5{
+            font-family: var(--cardo);
+            font-size: 0.5em;
+            color: var(--azul);
+        }
+        h6{
+            font-family: var(--cardo);
+            display:flex;
+            justify-content: center;
+            padding: 0.5em 0 0.5em 0;
+            font-size: 1.2em;
+            color: white;
+            font-weight: var(--negrita);
+        }
+        nav{
+            display: flex;
+            padding: 1em 2em;
+            width: 100%;
+            justify-content: space-between;
+        }
+        nav a{
+            font-size: 0.75em;
+            color:white;
+        }
+        section:first-child .container{
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            background-color:var(--azul);
+            padding: 1em;
+            color: white;
+        }
+        section:last-child .container{
+            display: flex;
+            flex-wrap: wrap;
+            color: white;
+        }
+        section:last-child header{
+            width: 100%;
+        }
+        .cover{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-grow: 1;
+            min-width: 250px;
+            max-width: 500px;
+            min-height: 350px;
+            padding: 0.5em;
+            margin: 0.3em;
+            background-color: var(--amarillo_claro);
+            border-radius: 5%;
+            box-shadow: var(--azul) 0px 0px 8px;
+        }
+        .cover .cover_img{
+            display: flex;
+            width: 70%;
+            height: 260px;
+        }
+        .cover .cover_img img{
+            object-fit: cover;
+            object-position: bottom;
+        }
+        .cover header{
+            width: 80%;
+            background-color:var(--azul);
+            display: flex;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        .cover h3{
+            font-family: var(--cardo);
+            font-size: 0.5em;
+            color: white;
+        }
+        .card_Fundadorxs{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin: 1em;
+            padding: 0.75em;
+            align-items: center;
+            width: 300px;
+            box-shadow: var(--azul) 0px 0px 15px;
+        }
+        .Fundadorxs_img{
+            width: 250px;
+            height: 250px;
+        }
+        .Fundadorxs_img img{
+            border-radius: 250px;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .card_Fundadorxs header{
+            margin: 0.75em 0 0 0;
+            text-align: center;
+            padding: 0.5em;
+            border-radius: 20%;
+            background-color: #005d8f28;
+        }
+        section:last-child{
+            height: 100%;
+            background-color: var(--amarillo);
+            color: white;
+        }
+        footer{
+            height: 50vh;
+            background-color: var(--rosa);
+            color: black;
+        }
+        footer .container{
+            display: flex;
+
+        }
+        footer p{
+            width: 20%;
+        }
+        footer p:last-child{
+            margin-left: 3%;
+        }
+
+        footer p a{
+            font-family: var(--cardo);
+            font-size: 0.6em;
+            align-items:flex-end;
+        }
+        footer a:hover {
+        color:var(--amarillo);
+        background-color: #c26c4d;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        #Fundadorxs {
+            background-color: var(--azul);
+        }
+        @media (max-width:550px){
+            html{
+                font-size:20px;
+            }
+            section:first-child .container{
+                flex-direction: column;
+            }
+            .cover{
+                display: flex;
+                align-items: center;
+                width: 500px;
+                height: 450px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                flex-grow: 1;
+            }
+            .cover_img{
+                padding: 0;
+                width: 100%;
+                height: 300px;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            .cover_img img{
+                height: 250px;
+                object-fit: cover;
+                object-position: center;
+            }
+            .cover header{
+                display: flex;
+                width: 50%;
+                height: 100%;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+            }
+            .cover header h3{
+                font-size: 1.5em;
+                text-align: center;
+            }
+        } 
+    </style>
+</head>
+<link rel="icon" href="../4_GALLERY/images/mickey-ears.png"
+<body>
+    <header>
+        <div class="container">
+            <hgroup>
+                <h1>Disney</h1>
+                <h2>Sus mejores franquicias</h2>
+            </hgroup>
+            <nav>
+                <a href="#Fundadorxs">Fundadorxs</a>
+                <a href="#carteles">carteles</a>
+                <a href="#xxss">Redes sociales</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+            <section id="Fundadorxs">
+                <header>
+                    <h6>Fundadorxs</h6>
+                </header>
+                <div class="container">
+                    <div class="card_Fundadorxs">
+                        <div class="Fundadorxs_img">
+                            <img src="images/directorxs/Stan lee.jpg" alt="Stan lee">
+                        </div>
+                        <header>
+                            <h3>Stan Lee</h3>
+                            <blockquote>
+                                “Un gran poder conlleva una gran responsabilidad.”
+                            </blockquote>
+                            <blockquote>
+                                ✧✧✧
+                            </blockquote>
+                            <blockquote>
+                                Marvel
+                            </blockquote>
+                        </header>
+                    </div>
+                    <div class="card_Fundadorxs">
+                        <div class="Fundadorxs_img">
+                            <img src="images/directorxs/steve jobs.jpeg" alt="Steve jobs">
+                        </div>
+                        <header>
+                            <h3>Steve Jobs</h3>
+                            <blockquote>
+                                “El diseño es el alma de todo lo creado por el hombre.”
+                            </blockquote>
+                            <blockquote>
+                                ✧✧✧
+                            </blockquote>
+                            <blockquote>
+                                Pixar
+                            </blockquote>
+                        </header>
+                    </div>
+                    <div class="card_Fundadorxs">
+                        <div class="Fundadorxs_img">
+                            <img src="images/directorxs/walt disney.jpg" alt="Walt disney">
+                        </div>
+                        <header>
+                            <h3>Walt Disney</h3>
+                            <blockquote>
+                                “Me molestan las limitaciones de mi propia imaginación.”
+                            </blockquote>
+                            <blockquote>
+                                ✧✧✧
+                            </blockquote>
+                            <blockquote>
+                                Disney
+                            </blockquote>    
+                        </header>
+                    </div>
+                </div>
+            </section>
+            <section id="carteles">
+                <header>
+                    <h6>Carteles</h6>
+                    <h4>Marvel</h4>
+                </header>
+                    <div class="container">
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="images/carteles/Avenger End game.jpg" alt="Avenger end game">
+                                </div>
+                                <header>
+                                    <h3>Avengers: Endgame</h3>
+                                </header>
+                            </div>
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="images/carteles/Avenger Infinity war.jpg" alt="Infinity war">
+                                </div>
+                                <header>
+                                    <h3>Avengers: Infinity war</h3>
+                                </header>
+                            </div>
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="images/carteles/Guardianes de la galaxia.jpg" alt="Guardianes de la galaxia">
+                                </div>
+                                <header>
+                                    <h3>Guardianes de la galaxia</h3>
+                                </header>
+                            </div>
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="images/carteles/Iron Man.jpg" alt="Iron man">
+                                </div>
+                                <header>
+                                    <h3>Iron man</h3>
+                                </header>
+                            </div>
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="images/carteles/capitana marvel.jpg" alt="Capitana marvel">
+                                </div>
+                                <header>
+                                    <h3>Capitana marvel</h3>
+                                </header>
+                            </div>
+                        </div>
+                        <h4>Pixar</h4>
+                        <div class="container">
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="images/carteles/Coco.jpg" alt="Coco">
+                                </div>
+                                <header>
+                                    <h3>Coco</h3>
+                                </header>
+                            </div>
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="images/carteles/Luca.jpg" alt="Luca">
+                                </div>
+                                <header>
+                                    <h3>Luca</h3>
+                                </header>
+                            </div>
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="images/carteles/Soul.jpg" alt="Soul">
+                                </div>
+                                <header>
+                                    <h3>Soul</h3>
+                                </header>
+                            </div>
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="images/carteles/onward.jpg" alt="Onward">
+                                </div>
+                                <header>
+                                    <h3>Onward</h3>
+                                </header>
+                            </div>
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="images/carteles/Inside out.jpg" alt="Inside out">
+                                </div>
+                                <header>
+                                    <h3>Inside out</h3>
+                                </header>
+                            </div>
+                        </div>
+                        <h4>Disney</h4>
+                        <div class="container">
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="images/carteles/Cenicienta.jpg" alt="Cenicienta">
+                                </div>
+                                <header>
+                                    <h3>Cenicienta</h3>
+                                </header>
+                            </div>
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="images/carteles/Enredados.jpg" alt="Enredados">
+                                </div>
+                                <header>
+                                    <h3>Enredados</h3>
+                                </header>
+                            </div>
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="images/carteles/Tiana y el sapo.jpg" alt="Tiana y el sapo">
+                                </div>
+                                <header>
+                                    <h3>Tiana y el sapo</h3>
+                                </header>
+                            </div>
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="images/carteles/Vaiana.jpg" alt="Vaiana">
+                                </div>
+                                <header>
+                                    <h3>Vaiana</h3>
+                                </header>
+                            </div>
+                            <div class="cover">
+                                <div class="cover_img">
+                                    <img src="images/carteles/encanto.jpg" alt="Encanto">
+                                </div>
+                                <header>
+                                    <h3>Encanto</h3>
+                                </header>
+                            </div>
+                        </div>
+                    </section>
+    </main>
+    <footer id="xxss">
+            <h6>Redes sociales</h6>
+            <div class="container">
+                <p><a href="https://twitter.com/disneyspain?lang=es"><h5>Twitter</h5></a></p>
+                <p><a href="https://www.instagram.com/disneyspain/?hl=es"><h5>Instagram</h5></a></p>
+                <p><a href="https://www.facebook.com/DisneySpain/?brand_redir=11784025953"><h5>Facebook</h5></a></p>
+                <p><a href="https://www.youtube.com/channel/UCMm8XFMnB2wODJqYt6d6OJQ"><h5>Youtube</h5></a></p>
+                <p><a href="https://www.shopdisney.es/"><h5>Tienda</h5></a></p>
+                <p><a href="https://disney.es/"><h5>Disney.es</h5></a></p>
+                <p><a href="https://support.disney.com/hc/es-es/categories/360000006886-shopDisney"><h5>Support</h5></a></p>
+            </div>
+    </footer>
+</body>
+</html>
